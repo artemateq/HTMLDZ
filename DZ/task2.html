@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My To Do List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+
+    h2 {
+      margin-bottom: 16px;
+      font-size: 1.4rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      max-width: 500px;
+      border: 1px solid #ccc;
+    }
+
+    ul li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      font-size: 15px;
+    }
+
+    /* Alternating blue shades for odd/even */
+    ul li:nth-child(odd) {
+      background-color: #b8d8e8;
+    }
+
+    ul li:nth-child(even) {
+      background-color: #d0eaf5;
+    }
+
+    /* Checked items get grey background */
+    ul li.checked {
+      background-color: #c0c0c0;
+    }
+
+    /* Checkbox icon using unicode */
+    ul li .icon {
+      font-size: 17px;
+      flex-shrink: 0;
+    }
+
+    /* Strikethrough for checked items */
+    ul li.checked .task-text {
+      text-decoration: line-through;
+      color: #555;
+    }
+
+    /* Red X delete button */
+    ul li .delete {
+      margin-left: auto;
+      color: red;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>My To Do List</h2>
+
+  <ul>
+    <li>
+      <span class="icon">&#9633;</span>
+      <span class="task-text">Hit the gym</span>
+      <span class="delete">&#10005;</span>
+    </li>
+    <li class="checked">
+      <span class="icon">&#9745;</span>
+      <span class="task-text">Pay bills</span>
+      <span class="delete">&#10005;</span>
+    </li>
+    <li>
+      <span class="icon">&#9633;</span>
+      <span class="task-text">Meet John</span>
+      <span class="delete">&#10005;</span>
+    </li>
+    <li>
+      <span class="icon">&#9633;</span>
+      <span class="task-text">Buy eggs</span>
+      <span class="delete">&#10005;</span>
+    </li>
+    <li class="checked">
+      <span class="icon">&#9745;</span>
+      <span class="task-text">Read a book</span>
+      <span class="delete">&#10005;</span>
+    </li>
+    <li>
+      <span class="icon">&#9633;</span>
+      <span class="task-text">Organize office</span>
+      <span class="delete">&#10005;</span>
+    </li>
+    <li>
+      <span class="icon">&#9633;</span>
+      <span class="task-text">Eat dinner</span>
+      <span class="delete">&#10005;</span>
+    </li>
+    <li>
+      <span class="icon">&#9633;</span>
+      <span class="task-text">Buy apples</span>
+      <span class="delete">&#10005;</span>
+    </li>
+    <li>
+      <span class="icon">&#9633;</span>
+      <span class="task-text">Meet George</span>
+      <span class="delete">&#10005;</span>
+    </li>
+    <li>
+      <span class="icon">&#9633;</span>
+      <span class="task-text">Feed the cat</span>
+      <span class="delete">&#10005;</span>
+    </li>
+    <li class="checked">
+      <span class="icon">&#9745;</span>
+      <span class="task-text">Write a letter</span>
+      <span class="delete">&#10005;</span>
+    </li>
+    <li>
+      <span class="icon">&#9633;</span>
+      <span class="task-text">Run 1 km</span>
+      <span class="delete">&#10005;</span>
+    </li>
+  </ul>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fruit List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+
+    ol {
+      background-color: #f4a7b9; /* light pink - whole list background */
+      padding: 20px 20px 20px 50px;
+      list-style: none;
+      counter-reset: fruit-counter;
+    }
+
+    ol li {
+      background-color: #e07090; /* darker pink - single list item background */
+      margin: 12px 0;
+      padding: 8px 0;
+      counter-increment: fruit-counter;
+      display: flex;
+      align-items: center;
+    }
+
+    ol li::before {
+      content: counter(fruit-counter) ".";
+      background-color: #c0405a; /* darkest - only under the number */
+      color: white;
+      padding: 6px 10px;
+      margin-right: 12px;
+      min-width: 30px;
+      text-align: center;
+    }
+
+    ol li span {
+      background-color: #c0405a; /* darkest - only under the text */
+      color: white;
+      padding: 6px 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <ol>
+    <li><span>Apple</span></li>
+    <li><span>Orange</span></li>
+    <li><span>Pineapple</span></li>
+    <li><span>Pear</span></li>
+    <li><span>Cherry</span></li>
+  </ol>
+
+</body>
+</html>
