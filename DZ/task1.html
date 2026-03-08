@@ -10,14 +10,14 @@
     }
 
     ol {
-      background-color: #f4a7b9; /* light pink - whole list background */
+      background-color: #f4a7b9; 
       padding: 20px 20px 20px 50px;
       list-style: none;
       counter-reset: fruit-counter;
     }
 
     ol li {
-      background-color: #e07090; /* darker pink - single list item background */
+      background-color: #e07090; 
       margin: 12px 0;
       padding: 8px 0;
       counter-increment: fruit-counter;
@@ -27,7 +27,7 @@
 
     ol li::before {
       content: counter(fruit-counter) ".";
-      background-color: #c0405a; /* darkest - only under the number */
+      background-color: #c0405a; 
       color: white;
       padding: 6px 10px;
       margin-right: 12px;
@@ -36,7 +36,7 @@
     }
 
     ol li span {
-      background-color: #c0405a; /* darkest - only under the text */
+      background-color: #c0405a; 
       color: white;
       padding: 6px 12px;
     }
